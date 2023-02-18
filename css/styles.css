@@ -26,6 +26,10 @@ body {
   display: flex;
   align-items: center;
   gap: 24px;
+ 
+}
+header{
+  border-bottom: 1px solid var(--footer-text-color);
 }
 .header-nav {
   display: flex;
@@ -70,12 +74,13 @@ img {
   color: var(--ligo-color);
   text-decoration: none;
   text-transform: uppercase;
-  padding: 24px 0;
+ 
  
 }
 .logo-second {
   color: var(--primary-text-color);
-  margin-right: 76px;
+  padding-right: 76px;
+  
 }
 .logo-second-footer {
   align-items: center;
@@ -96,6 +101,8 @@ img {
   text-decoration: none;
   letter-spacing: 0.02em;
   display: flex;
+  gap: 40px;
+
 }
 /*hero section*/
 
@@ -157,7 +164,7 @@ img {
   color: var(--primary-text-color);
   padding: 24px 0;
   font-style: normal;
-  padding-left: 40px;
+  
 }
 
 /* feature section*/
@@ -182,7 +189,7 @@ img {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin-bottom: 8px;
+ 
 }
 
 /* what are we doing section*/
@@ -210,7 +217,7 @@ img {
 .section.container-team{
   background-color: var(--color-background-button);
 }
-.team {
+.team-card.team {
   text-align: center;
   background-color: var(--color-background);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -233,7 +240,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
-  margin-top: 32px;
+ 
   margin-bottom: 8px;
 }
 .job {
@@ -242,10 +249,13 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-padding-bottom: 32px;
+
 
 }
-
+.team-info{
+padding-top: 32px;
+padding-bottom: 32px;
+}
 /* footer */
 .footer {
   padding-top: 100px;
@@ -278,11 +288,8 @@ padding-bottom: 32px;
   color: var(--color-background);
  
 }
-.button-primary:hover,
-.button-primary :focus{
-  color: var(--ligo-color);
-  background-color: var(--color-background-button);
-}
+
+
 .button-primary {
   padding: 12px 24px;
   background-color: var(--button-color);
@@ -293,7 +300,9 @@ padding-bottom: 32px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
-  border: 0;
+ border-radius: 4px;
+ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12) ;
+
 }
 .button-secondary {
   color: var(--ligo-color);
@@ -304,13 +313,14 @@ padding-bottom: 32px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
-  border: 0;
+  border:1px solid var(--footer-text-color) ;
+  border-radius: 4px;
   padding: 12px 24px;
 }
 
 /*picturies section*/
 .portfolio{
- padding: 96px 156px 120px 156px;
+ padding: 96px 0 120px 0;
 }
 .team {
   text-align: center;
@@ -328,15 +338,14 @@ padding-bottom: 32px;
 .picture {
   border: 1px solid #e7e9fc;
   border-top: none;
- 
-}
-.section-text{
+  padding-top: 32px;
+  padding-left: 64px;
   padding-bottom: 32px;
-  padding-left: 16px;
  
 }
+
 .title-secondary{
   margin-bottom: 8px;
-  padding-left: 16px;
-  margin-top: 32px;
+  
+ 
 }
